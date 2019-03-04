@@ -33,11 +33,11 @@ public class ExitButton {
                 txt.setLayoutX(95);
                 txt.setLayoutY(50);
 
-                Button da = CreateMainMenuButton.CreateMainMenuButton("ДА", 25, 150, 40, URL,URL_line);
-                Button net = CreateMainMenuButton.CreateMainMenuButton("НЕТ", 25, 150, 40, URL,URL_line);
+                Button yes = CreateMainMenuButton.CreateMainMenuButton("ДА", 25, 150, 40, URL,URL_line);
+                Button no = CreateMainMenuButton.CreateMainMenuButton("НЕТ", 25, 150, 40, URL,URL_line);
 
                 HBox hbox1 = new HBox(20);
-                hbox1.getChildren().addAll(da, net);
+                hbox1.getChildren().addAll(yes, no);
                 hbox1.setLayoutX(40);
                 hbox1.setLayoutY(100);
 
@@ -48,7 +48,7 @@ public class ExitButton {
                 ext.initModality(Modality.APPLICATION_MODAL);
                 ext.show();
 
-                da.setOnAction(new EventHandler<ActionEvent>() {
+                yes.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
                         MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3", 1);
@@ -56,7 +56,7 @@ public class ExitButton {
                         Platform.exit();
                     }
                 });
-                net.setOnAction(new EventHandler<ActionEvent>() {
+                no.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
                         MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3", 1);
