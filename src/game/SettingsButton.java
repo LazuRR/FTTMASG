@@ -1,4 +1,4 @@
-package sample;
+package game;
 
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -13,23 +13,22 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SettingsButton {
-    public static void SettingsButton(Button name, ImageView SettingsView, Stage stage, MediaPlayer music, ImageView iconI,
-                               ImageView iconII, ImageView iconIII, String URL, String URL_line){
+    public static void SettingsButton(Button name, ImageView SettingsView, Stage stage, javafx.scene.media.MediaPlayer music, ImageView iconI,
+                                      ImageView iconII, ImageView iconIII, String URL, String URL_line){
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event){
 
                 //SETINGS WINDOW BUILDING
-                MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3",1);
+                javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer("resources/sounds/button.mp3",1);
                 button_sound.play();
-                MediaPlayer slider_msc = mediaPlayer.mediaPlayer("slider.mp3",1);
+                javafx.scene.media.MediaPlayer slider_msc = MediaPlayer.mediaPlayer("resources/sounds/slider.mp3",1);
 
                 Stage settwin = new Stage();
                 SettingsView.setLayoutX(-475);
@@ -60,7 +59,7 @@ public class SettingsButton {
                 back.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3",1);
+                        javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer("resources/sounds/button.mp3",1);
                         button_sound.play();
                         settwin.close();
                     }

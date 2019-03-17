@@ -1,4 +1,4 @@
-package sample;
+package game;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -9,7 +9,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
-import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -20,7 +19,7 @@ public class ExitButton {
             @Override
             public void handle(ActionEvent event) {
 
-                MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3", 1);
+                javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer("resources/sounds/button.mp3", 1);
                 button_sound.play();
 
                 ExitView.setLayoutX(-480);
@@ -51,7 +50,7 @@ public class ExitButton {
                 yes.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3", 1);
+                        javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer("resources/sounds/button.mp3", 1);
                         button_sound.play();
                         Platform.exit();
                     }
@@ -59,7 +58,7 @@ public class ExitButton {
                 no.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        MediaPlayer button_sound = mediaPlayer.mediaPlayer("button.mp3", 1);
+                        javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer("resources/sounds/button.mp3", 1);
                         button_sound.play();
                         ext.close();
                     }

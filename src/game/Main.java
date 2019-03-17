@@ -1,33 +1,14 @@
-package sample;
-
-import java.io.*;
-import java.util.Scanner;
+package game;
 
 import javafx.application.Application;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.geometry.Insets;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.scene.layout.*;
-import javafx.scene.image.*;
-import javafx.scene.*;
-import javafx.application.Platform;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.scene.control.Slider;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
-import jdk.nashorn.internal.objects.Global;
+
+import java.io.FileNotFoundException;
 
 
 public class Main extends Application {
@@ -39,13 +20,13 @@ public class Main extends Application {
     public void start(Stage stage) throws FileNotFoundException {
 
         window = stage;
-        MediaPlayer msc = mediaPlayer.mediaPlayer("button_msc.mp3",1);
+        javafx.scene.media.MediaPlayer msc = MediaPlayer.mediaPlayer("resources/sounds/button_msc.mp3",1);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //SET UP BACKGROUND
 
-        ImageView imageView1 =imageView.imageView("anime.jpg",1375,783);
+        javafx.scene.image.ImageView imageView1 = ImageView.imageView("resources/images/anime.jpg",1375,783);
         Group root1 = new Group(imageView1);
 
         //BUTTON LAYOUT
@@ -70,8 +51,8 @@ public class Main extends Application {
 
         //SET UP MUSIC
 
-        MediaPlayer music1 = mediaPlayer.mediaPlayer("russ.mp3",0.2);
-        music1.setCycleCount(MediaPlayer.INDEFINITE);
+        javafx.scene.media.MediaPlayer music1 = MediaPlayer.mediaPlayer("resources/music/russ.mp3",0.2);
+        music1.setCycleCount(javafx.scene.media.MediaPlayer.INDEFINITE);
 
         Button music_play1= CreateMainMenuButton.CreateMainMenuButton("play",20,150,40,"#b3a3c6","#e8daae");
         Button music_pause1= CreateMainMenuButton.CreateMainMenuButton("pause",20,150,40,"#b3a3c6","#e8daae");
@@ -87,19 +68,21 @@ public class Main extends Application {
         //BUILD THE SCENE
 
         scene1 = new Scene(root1, 1360, 768);
-        ImageView ExitView1 =imageView.imageView("anime.jpg",1375,783);
-        ImageView iconI = imageView.imageView("anime.jpg",25,25);
-        ImageView iconII = imageView.imageView("dark_wp.jpg",25,25);
-        ImageView iconIII = imageView.imageView("megu_wp.jpg",25,25);
-        ImageView SettingsView1 =imageView.imageView("anime.jpg",1375,783);
+        javafx.scene.image.ImageView ExitView1 = ImageView.imageView("resources/images/anime.jpg",1375,783);
+        javafx.scene.image.ImageView iconI = ImageView.imageView("resources/images/anime.jpg",25,25);
+        javafx.scene.image.ImageView iconII = ImageView.imageView("resources/images/dark_wp.jpg",25,25);
+        javafx.scene.image.ImageView iconIII = ImageView.imageView("resources/images/megu_wp.jpg",25,25);
+        javafx.scene.image.ImageView SettingsView1 = ImageView.imageView("resources/images/anime.jpg",1375,783);
         //EXIT BUTTON
         ExitButton.ExitButton(exit1,ExitView1,stage,"-fx-text-fill: white;","#8b9cc4","#e8daae");
         //SETTINGS BUTTON
         SettingsButton.SettingsButton(sett1,SettingsView1,stage,music1,iconI,iconII,iconIII,"#8b9cc4","#e8daae");
+        //PlayButton
+        PlayButton.Play(play1,window);
 
         //2222//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ImageView imageView2 =imageView.imageView("dark_wp.jpg",1375,783);
+        javafx.scene.image.ImageView imageView2 = ImageView.imageView("resources/images/dark_wp.jpg",1375,783);
         Group root2 = new Group(imageView2);
 
         //BUTTON LAYOUT
@@ -125,8 +108,8 @@ public class Main extends Application {
 
         //SET UP MUSIC
 
-        MediaPlayer music2 = mediaPlayer.mediaPlayer("dark.mp3",0.2);
-        music2.setCycleCount(MediaPlayer.INDEFINITE);
+        javafx.scene.media.MediaPlayer music2 = MediaPlayer.mediaPlayer("resources/music/dark.mp3",0.2);
+        music2.setCycleCount(javafx.scene.media.MediaPlayer.INDEFINITE);
         Button music_play2= CreateMainMenuButton.CreateMainMenuButton("play",20,150,40,"#bcbcbc","#fffc51");
         Button music_pause2= CreateMainMenuButton.CreateMainMenuButton("pause",20,150,40,"#bcbcbc","#fffc51");
         VBox vbox3_2 = new VBox(8);
@@ -141,16 +124,18 @@ public class Main extends Application {
 
         scene2 = new Scene(root2, 1360, 768);
 
-        ImageView ExitView2 =imageView.imageView("dark_wp.jpg",1375,783);
-        ImageView SettingsView2 =imageView.imageView("dark_wp.jpg",1375,783);
+        javafx.scene.image.ImageView ExitView2 = ImageView.imageView("resources/images/dark_wp.jpg",1375,783);
+        javafx.scene.image.ImageView SettingsView2 = ImageView.imageView("resources/images/dark_wp.jpg",1375,783);
         //EXIT BUTTON
         ExitButton.ExitButton(exit2,ExitView2,stage,"-fx-text-fill: khaki;","#bcbcbc","#fffc51");
         //SETTINGS BUTTON
         SettingsButton.SettingsButton(sett2,SettingsView2,stage,music2,iconI,iconII,iconIII,"#bcbcbc","#fffc51");
+        //PlayButton
+        PlayButton.Play(play2,window);
 
         ///3333/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ImageView imageView3 =imageView.imageView("megu_wp.jpg",1375,783);
+        javafx.scene.image.ImageView imageView3 = ImageView.imageView("resources/images/megu_wp.jpg",1375,783);
         Group root3 = new Group(imageView3);
 
         //BUTTON LAYOUT
@@ -176,8 +161,8 @@ public class Main extends Application {
 
         //SET UP MUSIC
 
-        MediaPlayer music3 = mediaPlayer.mediaPlayer("bless.mp3",0.2);
-        music3.setCycleCount(MediaPlayer.INDEFINITE);
+        javafx.scene.media.MediaPlayer music3 = MediaPlayer.mediaPlayer("resources/music/bless.mp3",0.2);
+        music3.setCycleCount(javafx.scene.media.MediaPlayer.INDEFINITE);
         Button music_play3= CreateMainMenuButton.CreateMainMenuButton("play",20,150,40,"#82aded","#5e1d1d");
         Button music_pause3= CreateMainMenuButton.CreateMainMenuButton("pause",20,150,40,"#82aded","#5e1d1d");
         VBox vbox3_3 = new VBox(8);
@@ -192,12 +177,14 @@ public class Main extends Application {
 
         scene3 = new Scene(root3, 1360, 768);
 
-        ImageView ExitView3 =imageView.imageView("megu_wp.jpg",1375,783);
-        ImageView SettingsView3 =imageView.imageView("megu_wp.jpg",1375,783);
+        javafx.scene.image.ImageView ExitView3 = ImageView.imageView("resources/images/megu_wp.jpg",1375,783);
+        javafx.scene.image.ImageView SettingsView3 = ImageView.imageView("resources/images/megu_wp.jpg",1375,783);
         //EXIT BUTTON
         ExitButton.ExitButton(exit3,ExitView3,stage,"-fx-text-fill: lightskyblue;","#82aded","#5e1d1d");
         //SETTINGS BUTTON
        SettingsButton.SettingsButton(sett3,SettingsView3,stage,music3,iconI,iconII,iconIII,"#82aded","#5e1d1d");
+        //PlayButton
+        PlayButton.Play(play3,window);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

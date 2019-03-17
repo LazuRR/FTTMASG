@@ -1,6 +1,5 @@
-package sample;
+package game;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
@@ -19,4 +18,6 @@ public class CreateMainMenuButton {
     }
 
 
+    public static class Controller {
+    }
 }
