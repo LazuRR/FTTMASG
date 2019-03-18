@@ -18,7 +18,7 @@ public class Main extends Application {
     static Scene scene1,scene2,scene3;
 
     @Override
-    public void start(Stage stage) throws FileNotFoundException {
+    public void start(Stage stage) throws FileNotFoundException,java.lang.InterruptedException {
 
         window = stage;
         javafx.scene.media.MediaPlayer msc = MediaPlayer.mediaPlayer(Globals.button_msc,1);

@@ -1,5 +1,7 @@
 package game;
 
+import game.Button_layout.Lineal;
+import game.Button_layout.SingleObject;
 import game.Button_layout.Snake;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -12,7 +14,7 @@ import menu.Globals;
 import menu.MediaPlayer;
 
 public class PlayButton  {
-    public static void Play(Button name,Stage stage) throws java.io.FileNotFoundException {
+    public static void Play(Button name,Stage stage) throws java.io.FileNotFoundException,java.lang.InterruptedException {
         Group group = new Group();
         Scene scene = new Scene(group,Color.BLACK);
         Stage Gamestage = new Stage();
@@ -22,7 +24,10 @@ public class PlayButton  {
         Gamestage.setResizable(false);
         Gamestage.initOwner(stage);
         Snake.Snake(group,150,150);
-
+        Snake.Snake(group,450,540);
+        Snake.Snake(group,900,250);
+        Lineal.Lineal(group,500,100);
+        SingleObject.SingleObject(group,50,50);
 
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override

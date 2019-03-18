@@ -20,28 +20,28 @@ import menu.MediaPlayer;
 
 
 public class Snake {
-    public static void Snake(Group group,int setPosX,int setPosY) throws java.io.FileNotFoundException{
+    public static void Snake(Group group,int setPosX,int setPosY  ) throws java.io.FileNotFoundException,java.lang.InterruptedException{
         Group snake = new Group();
-        Button n1 = GameButton.GameButton(group);
+        Button n1 = GameButton.GameButton(group,snake);
         n1.setLayoutX(50);
         n1.setLayoutY(150);
-        GameLogic.GameLogic(n1,group);
-        Button n2 = GameButton.GameButton(group);
+       // GameLogic.GameLogic(n1,group);
+        Button n2 = GameButton.GameButton(group,snake);
         n2.setLayoutX(150);
         n2.setLayoutY(100);
-        GameLogic.GameLogic(n2,group);
-        Button n3 = GameButton.GameButton(group);
+        //GameLogic.GameLogic(n2,group);
+        Button n3 = GameButton.GameButton(group,snake);
         n3.setLayoutX(250);
         n3.setLayoutY(130);
-        GameLogic.GameLogic(n3,group);
-        Button n4 = GameButton.GameButton(group);
+        //GameLogic.GameLogic(n3,group);
+        Button n4 = GameButton.GameButton(group,snake);
         n4.setLayoutX(280);
         n4.setLayoutY(230);
-        GameLogic.GameLogic(n4,group);
-        Button n5 = GameButton.GameButton(group);
+       // GameLogic.GameLogic(n4,group);
+        Button n5 = GameButton.GameButton(group,snake);
         n5.setLayoutX(240);
         n5.setLayoutY(330);
-        GameLogic.GameLogic(n5,group);
+        //GameLogic.GameLogic(n5,group);
         snake.getChildren().addAll(n1,n2,n3,n4,n5);
         snake.setLayoutX(setPosX);
         snake.setLayoutY(setPosY);

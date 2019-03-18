@@ -4,6 +4,7 @@ package game;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Circle;
 
@@ -13,12 +14,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.image.Image;
 import java.io.FileInputStream;
 import menu.Globals;
-import javafx.animation.*;
-import javafx.util.Duration;
 
-
-public class GameButton {
-    public static Button GameButton(Group group) throws FileNotFoundException {
+public class GameButton  {
+    public static Button GameButton(Group group,Group snake) throws FileNotFoundException,java.lang.InterruptedException{
         Button bt = new Button();
         int r=45;
         bt.setShape(new Circle(r));
@@ -30,8 +28,7 @@ public class GameButton {
         bt.setBackground(background);
         bt.setBorder(new Border(new BorderStroke(Color.web("#fccf46"),
                 BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(4.3))));
-
+        GameLogic.GameLogic(bt,group,snake);
         return bt;
     }
-
 }
