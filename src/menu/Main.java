@@ -144,7 +144,6 @@ public class Main extends Application {
         Button play3 = CreateMainMenuButton.CreateMainMenuButton("Играть",25,150,40,"#82aded","#5e1d1d");
         Button sett3 = CreateMainMenuButton.CreateMainMenuButton("Настройки",25,210,40,"#82aded","#5e1d1d");
         Button exit3 = CreateMainMenuButton.CreateMainMenuButton("Выход",25,140,40,"#82aded","#5e1d1d");
-
         VBox vbox1_3 = new VBox(15);
         vbox1_3.getChildren().addAll(play3,sett3,exit3);
         vbox1_3.setLayoutX(50);
@@ -172,7 +171,6 @@ public class Main extends Application {
         vbox3_3.setLayoutY(50);
         music_play3.setOnAction(e->{msc.play();music3.play();});
         music_pause3.setOnAction(e->{msc.play();music3.pause();});
-
         root3.getChildren().addAll(vbox1_3,vbox2_3,vbox3_3);
         //BUILD THE SCENE
 
