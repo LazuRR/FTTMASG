@@ -31,5 +31,7 @@ public class Lineal {
         lineal.setLayoutX(setPosX);
         lineal.setLayoutY(setPosY);
         group.getChildren().addAll(lineal);
+        if (n5.isPressed()==true)group.getChildren().remove(lineal);
+
     }
 }

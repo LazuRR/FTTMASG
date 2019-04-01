@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 import menu.Globals;
 
 public class GameButton extends Button {
-    public GameButton(Group group, Group snake, Button b2)throws FileNotFoundException,java.lang.InterruptedException {
+    public GameButton(Group group, Group layout, Button b2)throws FileNotFoundException,java.lang.InterruptedException {
         int r=45;
         this.setShape(new Circle(r));
         this.setMinSize(2*r, 2*r);
@@ -22,7 +22,7 @@ public class GameButton extends Button {
         this.setBackground(background);
         this.setBorder(new Border(new BorderStroke(Color.web("#fccf46"),
                 BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(4.3))));
-        GameLogic.GameLogic(this,b2,group,snake);
+        GameLogic.GameLogic(this,b2,group,layout);
         this.setDisable(true);
         this.setVisible(false);
     }

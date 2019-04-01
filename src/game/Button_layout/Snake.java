@@ -31,6 +31,7 @@ public class Snake {
         snake.setLayoutX(setPosX);
         snake.setLayoutY(setPosY);
         group.getChildren().addAll(snake);
+        if (n5.isPressed()==true)group.getChildren().remove(snake);
     }
 }
 
