@@ -18,11 +18,10 @@ import javafx.util.Duration;
 import javafx.beans.value.ChangeListener;
 
 public class PlayButton {
-    public static void Play(Button name, Stage stage) throws java.io.FileNotFoundException, java.lang.InterruptedException {
+    public void Play(Button name, Stage stage) throws java.io.FileNotFoundException, java.lang.InterruptedException {
         //MEDIA AND BACKGROUND
         javafx.scene.image.ImageView playFieldBackGround = ImageView.imageView(Globals.poth,1920,1080);
         javafx.scene.media.MediaPlayer BCmusic = MediaPlayer.mediaPlayer(Globals.king,0.2);
-
 
         //SCENE, GROUP, STAGE
         Group group = new Group(playFieldBackGround);
@@ -36,9 +35,13 @@ public class PlayButton {
 
 
         //LAYOUTS
-        Snake.Snake(group, 150, 150, true);
-        Lineal.Lineal(group, 500, 100, true);
-        SingleObject.SingleObject(group, 50, 50, false);
+        LayoutHolder layoutHolder = new LayoutHolder();
+        layoutHolder.Father(group,1,500,100);
+        LayoutHolder layoutHolder2 = new LayoutHolder();
+        layoutHolder2.Father(group,2,800,400);
+        LayoutHolder layoutHolder3 = new LayoutHolder();
+        layoutHolder3.Father(group,3,100,400);
+
 
         //BUTTON AND PROGRESSBAR
         Button exit = CreateMainMenuButton.CreateMainMenuButton("Выход",25,1940,30,"#556658","#1b4727");
@@ -74,17 +77,5 @@ public class PlayButton {
                 if(Gamestage.isFullScreen()==true)BCmusic.play();
             }
         });
-        //TIMELINE
-        /*Timeline timeline = new Timeline(
-                new KeyFrame(Duration.ZERO, new KeyValue(progress.progressProperty(), 0)),
-                new KeyFrame(Duration.seconds(10), e-> {
-                    System.out.println("Song over");
-                }, new KeyValue(progress.progressProperty(), 1))
-        );
-        timeline.setCycleCount(Animation.INDEFINITE);
-        timeline.play();*/
-
-        //MP3 METADATA SHOWDOWN
-
     }
 }

@@ -22,8 +22,10 @@ public class GameButton extends Button {
         this.setBackground(background);
         this.setBorder(new Border(new BorderStroke(Color.web("#fccf46"),
                 BorderStrokeStyle.SOLID, CornerRadii.EMPTY, new BorderWidths(4.3))));
-        GameLogic.GameLogic(this,b2,group,layout);
+        GameLogic logic = new GameLogic();
+        logic.GameLogic(this,b2,group,layout);
         this.setDisable(true);
         this.setVisible(false);
+
     }
 }

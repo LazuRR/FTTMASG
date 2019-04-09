@@ -79,7 +79,8 @@ public class Main extends Application {
         //SETTINGS BUTTON
         SettingsButton.SettingsButton(sett1,SettingsView1,stage,music1,iconI,iconII,iconIII,"#8b9cc4","#e8daae");
         //PlayButton
-        PlayButton.Play(play1,window);
+        PlayButton playButton = new PlayButton();
+        playButton.Play(play1,window);
 
         //2222//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -132,7 +133,7 @@ public class Main extends Application {
         //SETTINGS BUTTON
         SettingsButton.SettingsButton(sett2,SettingsView2,stage,music2,iconI,iconII,iconIII,"#bcbcbc","#fffc51");
         //PlayButton
-        PlayButton.Play(play2,window);
+        playButton.Play(play2,window);
 
         ///3333/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -183,7 +184,7 @@ public class Main extends Application {
         //SETTINGS BUTTON
        SettingsButton.SettingsButton(sett3,SettingsView3,stage,music3,iconI,iconII,iconIII,"#82aded","#5e1d1d");
         //PlayButton
-        PlayButton.Play(play3,window);
+        playButton.Play(play3,window);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

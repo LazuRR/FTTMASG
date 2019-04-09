@@ -12,7 +12,7 @@ public class ProgressTimeline {
         ChangeListener<Duration> progressChangeListener;
         progressChangeListener = new ChangeListener<Duration>() {
             @Override public void changed(ObservableValue<? extends Duration> observableValue, Duration oldValue, Duration newValue) {
-                progress.setProgress(newPlayer.getCurrentTime().toMillis() / newPlayer.getTotalDuration().toMillis());
+                progress.setProgress(newPlayer.getCurrentTime().toMillis() /newPlayer.getTotalDuration().toMillis());
             }
         };
         newPlayer.currentTimeProperty().addListener(progressChangeListener);

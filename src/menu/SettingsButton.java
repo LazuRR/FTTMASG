@@ -24,7 +24,6 @@ public class SettingsButton {
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event){
-
                 //SETINGS WINDOW BUILDING
                 javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button,1);
                 button_sound.play();
@@ -34,7 +33,6 @@ public class SettingsButton {
                 SettingsView.setLayoutY(-47);
                 Group pane = new Group(SettingsView);
                 VBox vbox3 = new VBox(15);
-
 
                 //SETTINGS MENU BUTTONS CUSTOMIZATION
 

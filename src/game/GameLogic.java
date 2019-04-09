@@ -8,8 +8,8 @@ import javafx.scene.control.Button;
 import javafx.util.Duration;
 
 public class GameLogic {
-   public static void GameLogic(Button bt,Button nextone, Group group, Group snake) throws java.lang.InterruptedException {
-      bt.setOnAction(new EventHandler<ActionEvent>() {
+   public void GameLogic(Button bt,Button nextone, Group group, Group snake){
+      bt.setOnAction(new EventHandler<ActionEvent>(){
          @Override
          public void handle(ActionEvent event) {
             FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(450), bt);

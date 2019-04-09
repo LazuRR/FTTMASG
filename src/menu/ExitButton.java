@@ -14,14 +14,12 @@ import javafx.stage.Stage;
 
 public class ExitButton {
     public static void ExitButton(Button name, ImageView ExitView, Stage stage, String style, String URL, String URL_line) {
-
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
 
                 javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button, 1);
                 button_sound.play();
-
                 ExitView.setLayoutX(-480);
                 ExitView.setLayoutY(-180);
                 Group pane = new Group(ExitView);
