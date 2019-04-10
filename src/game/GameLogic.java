@@ -6,6 +6,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.util.Duration;
+import menu.Globals;
 
 public class GameLogic {
    public void GameLogic(Button bt,Button nextone, Group group, Group snake){
@@ -23,5 +24,4 @@ public class GameLogic {
          }
       });
       }
-
 }

@@ -12,7 +12,7 @@ import menu.Globals;
 
 public class GameButton extends Button {
     public GameButton(Group group, Group layout, Button b2)throws FileNotFoundException,java.lang.InterruptedException {
-        int r=45;
+        int r=50;
         this.setShape(new Circle(r));
         this.setMinSize(2*r, 2*r);
         this.setMaxSize(2*r, 2*r);
@@ -26,6 +26,5 @@ public class GameButton extends Button {
         logic.GameLogic(this,b2,group,layout);
         this.setDisable(true);
         this.setVisible(false);
-
     }
 }
