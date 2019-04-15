@@ -1,6 +1,6 @@
-package game.Button_layout;
+package by.bsuir.cpp.game.layout;
 
-import game.GameButton;
+import by.bsuir.cpp.game.GameButton;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
@@ -14,13 +14,13 @@ public class SingleObject implements Observer {
 
     private boolean flag;
 
-    public SingleObject(Group group, int setPosX, int setPosY,boolean entryPoint, EventHandler<ActionEvent> eventHandler) throws java.io.FileNotFoundException, java.lang.InterruptedException {
+    public SingleObject(Group group, int setPosX, int setPosY, boolean entryPoint,
+                        EventHandler<ActionEvent> eventHandler) throws java.io.FileNotFoundException {
 
         Group single = new Group();
         GameButton zero = new GameButton(null, null, null);
         n1 = new GameButton(group, single, zero);
-        if(entryPoint == true)
-        {
+        if (entryPoint == true) {
             n1.setVisible(true);
             n1.setDisable(false);
         }

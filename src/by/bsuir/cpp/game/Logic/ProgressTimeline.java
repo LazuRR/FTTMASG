@@ -1,4 +1,4 @@
-package game;
+package by.bsuir.cpp.game.Logic;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -11,8 +11,9 @@ public class ProgressTimeline {
         progress.setProgress(0);
         ChangeListener<Duration> progressChangeListener;
         progressChangeListener = new ChangeListener<Duration>() {
-            @Override public void changed(ObservableValue<? extends Duration> observableValue, Duration oldValue, Duration newValue) {
-                progress.setProgress(newPlayer.getCurrentTime().toMillis() /newPlayer.getTotalDuration().toMillis());
+            @Override
+            public void changed(ObservableValue<? extends Duration> observableValue, Duration oldValue, Duration newValue) {
+                progress.setProgress(newPlayer.getCurrentTime().toMillis() / newPlayer.getTotalDuration().toMillis());
             }
         };
         newPlayer.currentTimeProperty().addListener(progressChangeListener);

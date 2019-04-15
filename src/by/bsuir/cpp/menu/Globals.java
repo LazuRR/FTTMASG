@@ -1,4 +1,4 @@
-package menu;
+package by.bsuir.cpp.menu;
 
 public class Globals {
     //SOUNDS
@@ -17,4 +17,5 @@ public class Globals {
     public final static String megu_wp = "resources/images/megu_wp.jpg";
     public final static String button_wp_1 = "resources/images/button_wp.jpg";
     public final static String poth = "resources/images/poth.jpg";
+    public final static String cursor = "resources/images/cursor.png";
 }

@@ -1,5 +1,8 @@
-package menu;
+package by.bsuir.cpp.menu.Buttons;
 
+import by.bsuir.cpp.menu.Globals;
+import by.bsuir.cpp.menu.MediaPlayer;
+import by.bsuir.cpp.menu.TextLabelBold;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -18,20 +21,20 @@ public class ExitButton {
             @Override
             public void handle(ActionEvent event) {
 
-                javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button, 1);
-                button_sound.play();
+                javafx.scene.media.MediaPlayer buttonSound = MediaPlayer.mediaPlayer(Globals.button, 1);
+                buttonSound.play();
                 ExitView.setLayoutX(-480);
                 ExitView.setLayoutY(-180);
                 Group pane = new Group(ExitView);
                 Stage ext = new Stage();
                 ext.setTitle("Выход");
 
-                Label txt =  TextLabelBold.TextLabelBold("Точно хотите выйти?", 22, style);
+                Label txt = TextLabelBold.TextLabelBold("Точно хотите выйти?", 22, style);
                 txt.setLayoutX(95);
                 txt.setLayoutY(50);
 
-                Button yes = CreateMainMenuButton.CreateMainMenuButton("ДА", 25, 150, 40, URL,URL_line);
-                Button no = CreateMainMenuButton.CreateMainMenuButton("НЕТ", 25, 150, 40, URL,URL_line);
+                Button yes = CreateMainMenuButton.CreateMainMenuButton("ДА", 25, 150, 40, URL, URL_line);
+                Button no = CreateMainMenuButton.CreateMainMenuButton("НЕТ", 25, 150, 40, URL, URL_line);
 
                 HBox hbox1 = new HBox(20);
                 hbox1.getChildren().addAll(yes, no);

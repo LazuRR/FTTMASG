@@ -1,4 +1,4 @@
-package game;
+package by.bsuir.cpp.game.Logic;
 
 import java.util.Observable;
 

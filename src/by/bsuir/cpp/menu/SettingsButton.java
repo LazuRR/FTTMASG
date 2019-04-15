@@ -1,5 +1,6 @@
-package menu;
+package by.bsuir.cpp.menu;
 
+import by.bsuir.cpp.menu.Buttons.CreateMainMenuButton;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.event.ActionEvent;
@@ -20,13 +21,13 @@ import javafx.stage.Stage;
 
 public class SettingsButton {
     public static void SettingsButton(Button name, ImageView SettingsView, Stage stage, javafx.scene.media.MediaPlayer music, ImageView iconI,
-                                      ImageView iconII, ImageView iconIII, String URL, String URL_line){
+                                      ImageView iconII, ImageView iconIII, String URL, String URL_line) {
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event){
+            public void handle(ActionEvent event) {
                 //SETINGS WINDOW BUILDING
-                javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button,1);
-                button_sound.play();
+                javafx.scene.media.MediaPlayer buttonSound = MediaPlayer.mediaPlayer(Globals.button, 1);
+                buttonSound.play();
 
                 Stage settwin = new Stage();
                 SettingsView.setLayoutX(-475);
@@ -36,19 +37,19 @@ public class SettingsButton {
 
                 //SETTINGS MENU BUTTONS CUSTOMIZATION
 
-                Button volume =  CreateMainMenuButton.CreateMainMenuButton("Звук",25,170,40,URL,URL_line);
+                Button volume = CreateMainMenuButton.CreateMainMenuButton("Звук", 25, 170, 40, URL, URL_line);
 
-                Button graphics =  CreateMainMenuButton.CreateMainMenuButton("Картинка",25,190,40,URL,URL_line);
+                Button graphics = CreateMainMenuButton.CreateMainMenuButton("Картинка", 25, 190, 40, URL, URL_line);
 
-                Button howtoplay =  CreateMainMenuButton.CreateMainMenuButton("Как играть?",25,200,40,URL,URL_line);
+                Button howtoplay = CreateMainMenuButton.CreateMainMenuButton("Как играть?", 25, 200, 40, URL, URL_line);
 
-                vbox3.getChildren().addAll(volume,graphics,howtoplay);
+                vbox3.getChildren().addAll(volume, graphics, howtoplay);
                 vbox3.setLayoutX(40);
                 vbox3.setLayoutY(40);
                 pane.getChildren().addAll(vbox3);
 
                 //BUTTON BACK
-                Button back =  CreateMainMenuButton.CreateMainMenuButton("<Назад",25,180,40,URL,URL_line);
+                Button back = CreateMainMenuButton.CreateMainMenuButton("<Назад", 25, 180, 40, URL, URL_line);
                 back.setLayoutX(40);
                 back.setLayoutY(520);
                 pane.getChildren().addAll(back);
@@ -56,7 +57,7 @@ public class SettingsButton {
                 back.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button,1);
+                        javafx.scene.media.MediaPlayer button_sound = MediaPlayer.mediaPlayer(Globals.button, 1);
                         button_sound.play();
                         settwin.close();
                     }
@@ -64,7 +65,7 @@ public class SettingsButton {
 
                 //SLIDER  BAR
 
-                Slider slider = new Slider(0,1,music.getVolume());
+                Slider slider = new Slider(0, 1, music.getVolume());
                 slider.setLayoutX(240);
                 slider.setLayoutY(60);
 
@@ -77,22 +78,22 @@ public class SettingsButton {
 
                 // MENU BUTTON ITEMS
 
-                MenuItem coffee = new MenuItem("coffee",iconI);
-                MenuItem dark = new MenuItem("dark",iconII);
-                MenuItem bless = new MenuItem("bless the world!",iconIII);
+                MenuItem coffee = new MenuItem("coffee", iconI);
+                MenuItem dark = new MenuItem("dark", iconII);
+                MenuItem bless = new MenuItem("bless the world!", iconIII);
 
                 // CREATE MENU BUTTON WITH TEXT
 
                 MenuButton menuButton = new MenuButton("Стиль:");
-                menuButton.getItems().addAll(coffee,dark,bless);
-                menuButton.setPrefSize(150,40);
+                menuButton.getItems().addAll(coffee, dark, bless);
+                menuButton.setPrefSize(150, 40);
                 menuButton.setFont(new Font("Tahoma", 20));
                 menuButton.setBorder(new Border(new BorderStroke(Color.web(URL_line),
                         BorderStrokeStyle.SOLID, new CornerRadii(5), new BorderWidths(2))));
                 menuButton.setBackground(new Background(new BackgroundFill(Color.web(URL), new CornerRadii(5), Insets.EMPTY)));
                 menuButton.setLayoutX(250);
                 menuButton.setLayoutY(122);
-                pane.getChildren().addAll(slider,menuButton);
+                pane.getChildren().addAll(slider, menuButton);
 
                 coffee.setOnAction(e -> {
                     Main.window.setScene(Main.scene1);

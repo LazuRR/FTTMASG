@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Этот коммит полон боли и страданий">
-      <change afterPath="$PROJECT_DIR$/src/game/Button_layout/GroupRotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/OUpdateFlag.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Almost done">
+      <change afterPath="$PROJECT_DIR$/resources/images/cursor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/Lineal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Button_layout/Lineal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/SingleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Button_layout/SingleObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Button_layout/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/LayoutHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/LayoutHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/poth.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/poth.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/music/KingOfTheJungle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resources/music/KingOfTheJungle.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/AnimationPlay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/Blending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/GroupRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/GroupRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/Lineal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/Lineal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/SingleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/SingleObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Button_layout/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/Snake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/GameButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/LayoutHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/OUpdateFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/OUpdateFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/PlayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/PlayButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/ProgressTimeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/ProgressTimeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/CreateMainMenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Buttons/CreateMainMenuButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/ExitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Buttons/ExitButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/ImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/MediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/MediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/SettingsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/SettingsButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/TextLabelBold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bsuir/cpp/menu/TextLabelBold.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,6 +36,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/untitled3$Main.ic" NAME="Main Coverage Results" MODIFIED="1555251589590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sample.qq.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -69,46 +89,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Snake.java">
+        <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/PlayButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="90" column="37" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="90" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Lineal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Button_layout/GroupRotation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Button_layout/SingleObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            <state relative-caret-position="374">
+              <caret line="22" column="99" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,12 +101,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/PlayButton.java">
+        <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="352">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#10124#10125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,20 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/SettingsWindow.java" />
-        <option value="$PROJECT_DIR$/src/sample/CreateButton.java" />
-        <option value="$PROJECT_DIR$/src/sample/MenuItems.java" />
-        <option value="$PROJECT_DIR$/src/sample/CreateMainMenuButton.java" />
-        <option value="$PROJECT_DIR$/src/sample/TextLabelBold.java" />
-        <option value="$PROJECT_DIR$/src/sample/ExitButton.java" />
-        <option value="$PROJECT_DIR$/src/sample/mediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/sample/MediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/sample/imageView.java" />
-        <option value="$PROJECT_DIR$/src/sample/ImageView.java" />
-        <option value="$PROJECT_DIR$/src/sample/qq/SettingsButton.java" />
-        <option value="$PROJECT_DIR$/src/sample/SettingsButton.java" />
-        <option value="$PROJECT_DIR$/src/sample/GameScene.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/PlayButton.java" />
         <option value="$PROJECT_DIR$/src/sample.fxml" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -190,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/game/Button_layout/Blending.java" />
         <option value="$PROJECT_DIR$/src/game/Button_layout/Availability.java" />
         <option value="$PROJECT_DIR$/src/menu/ImageView.java" />
-        <option value="$PROJECT_DIR$/src/menu/Globals.java" />
         <option value="$PROJECT_DIR$/src/game/ProgressTimeline.java" />
         <option value="$PROJECT_DIR$/src/game/Listen.java" />
         <option value="$PROJECT_DIR$/src/game/Button_layout/Subscriber.java" />
@@ -200,20 +170,41 @@
         <option value="$PROJECT_DIR$/src/game/Observerable.java" />
         <option value="$PROJECT_DIR$/src/game/ONewsChannel.java" />
         <option value="$PROJECT_DIR$/src/menu/SettingsButton.java" />
-        <option value="$PROJECT_DIR$/src/game/AnimationPlay.java" />
-        <option value="$PROJECT_DIR$/src/menu/Main.java" />
         <option value="$PROJECT_DIR$/src/menu/ExitButton.java" />
         <option value="$PROJECT_DIR$/src/game/OUpdateFlag.java" />
-        <option value="$PROJECT_DIR$/src/game/GameLogic.java" />
         <option value="$PROJECT_DIR$/src/game/LayoutHolder.java" />
-        <option value="$PROJECT_DIR$/src/game/GameButton.java" />
+        <option value="$PROJECT_DIR$/src/game/Button_layout/ButtonTimer.java" />
+        <option value="$PROJECT_DIR$/src/game/AnimationPlay.java" />
         <option value="$PROJECT_DIR$/src/game/Button_layout/GroupRotation.java" />
         <option value="$PROJECT_DIR$/src/game/Button_layout/Snake.java" />
-        <option value="$PROJECT_DIR$/src/game/Button_layout/Lineal.java" />
         <option value="$PROJECT_DIR$/src/game/Button_layout/SingleObject.java" />
+        <option value="$PROJECT_DIR$/src/menu/Globals.java" />
+        <option value="$PROJECT_DIR$/src/menu/Main.java" />
+        <option value="$PROJECT_DIR$/src/game/Button_layout/ButtonAndCircle.java" />
+        <option value="$PROJECT_DIR$/src/game/CircleAnimation.java" />
+        <option value="$PROJECT_DIR$/src/game/Button_layout/Lineal.java" />
+        <option value="$PROJECT_DIR$/src/game/GameLogic.java" />
+        <option value="$PROJECT_DIR$/src/game/GameButton.java" />
         <option value="$PROJECT_DIR$/src/game/PlayButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/menu/ExitButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/menu/SettingsButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/ProgressTimeline.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/GameButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/Snake.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/SingleObject.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/GroupRotation.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/GameLogic.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Buttons/ExitButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/game/PlayButton.java" />
+        <option value="$PROJECT_DIR$/src/by/bsuir/cpp/menu/Main.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -231,8 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,38 +245,51 @@
             <path>
               <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled3" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled3" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sounds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="Button_layout" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,7 +307,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554908721692" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555319784926" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
@@ -350,7 +354,7 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="menu.Main" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.cpp.menu.Main" />
       <module name="untitled3" />
       <extension name="coverage">
         <pattern>
@@ -370,7 +374,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game.*" />
+          <option name="PATTERN" value="by.bsuir.cpp.game.Logic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -489,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554824565236</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Almost done">
+      <created>1554908753074</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554908753075</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -508,7 +519,43 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20939597" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17114094" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.37252125" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3286119" />
+      <window_info anchor="bottom" id="Application Servers" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Problems" order="8" />
+      <window_info anchor="bottom" id="Changes" order="9" />
+      <window_info anchor="bottom" id="Profiler" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" weight="0.3045326" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.25637394" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.34419262" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" x="57" y="610" width="1377" height="192" id="Run" order="11" type="FLOATING" weight="0.11898017" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23087248" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,42 +587,7 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info active="true" anchor="right" x="70" y="570" width="1377" height="199" id="Run" order="11" type="FLOATING" visible="true" weight="0.11898017" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15704697" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.20254958" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Application Servers" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Problems" order="8" />
-      <window_info anchor="bottom" id="Changes" order="9" />
-      <window_info anchor="bottom" id="Profiler" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" weight="0.3045326" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.25637394" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.34419262" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Maven" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info active="true" anchor="right" x="26" y="680" width="1490" height="95" id="Run" order="11" type="FLOATING" visible="true" weight="0.11898017" />
+      <window_info anchor="right" x="57" y="213" width="1377" height="589" id="Run" order="11" type="FLOATING" weight="0.11898017" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
@@ -587,22 +599,14 @@
     <MESSAGE value="Game logic in progress 31.03.2019" />
     <MESSAGE value="Game logic in progress 01.04.2019" />
     <MESSAGE value="Этот коммит полон боли и страданий" />
-    <option name="LAST_COMMIT_MESSAGE" value="Этот коммит полон боли и страданий" />
+    <MESSAGE value="Almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/untitled3.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/ExitButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/ImageView.java" />
     <entry file="file://$PROJECT_DIR$/src/game/TextLabelBold.java" />
     <entry file="file://$PROJECT_DIR$/resources/images/icon.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -621,19 +625,6 @@
     <entry file="file://$PROJECT_DIR$/src/game/Globals.java" />
     <entry file="file://$PROJECT_DIR$/src/game/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/game/SettingsButton.java" />
-    <entry file="file://$PROJECT_DIR$/resources/images/dark_wp.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/button_wp.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/TextLabelBold.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sounds/button.mp3">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -641,53 +632,13 @@
     <entry file="file://$PROJECT_DIR$/resources/music/dark.mp3">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/CreateMainMenuButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/music/russ.mp3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19686" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/music/KingOfTheJungle.mp3">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/poth.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Blending.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Listen.java" />
     <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Subscriber.java" />
@@ -696,47 +647,6 @@
     <entry file="file://$PROJECT_DIR$/src/game/Observer.java" />
     <entry file="file://$PROJECT_DIR$/src/game/Observerable.java" />
     <entry file="file://$PROJECT_DIR$/src/game/ONewsChannel.java" />
-    <entry file="file://$PROJECT_DIR$/src/menu/SettingsButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/ProgressTimeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/AnimationPlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="94" selection-start-line="20" selection-start-column="94" selection-end-line="20" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/ExitButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="15" column="124" selection-start-line="15" selection-start-column="124" selection-end-line="15" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -744,31 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/OUpdateFlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/Globals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/NeighbourInterraction.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/GameLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/media/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -776,69 +662,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/LayoutHolder.java">
+    <entry file="file://$PROJECT_DIR$/resources/images/button_wp.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/dark_wp.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/LayoutHolder.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Blending.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/AnimationPlay.java" />
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/Globals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Snake.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/ImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="90" column="37" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="90" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GameButton.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/Lineal.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/TextLabelBold.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/GroupRotation.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/Lineal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="1241">
+          <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Button_layout/SingleObject.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/ButtonAndCircle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/PlayButton.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/layout/SingleObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="187">
+          <caret line="17" column="100" selection-start-line="17" selection-start-column="100" selection-end-line="17" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/ProgressTimeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/Buttons/CreateMainMenuButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/Buttons/ExitButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/CircleAnimation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/GroupRotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/OUpdateFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/ButtonTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/GameButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/SettingsButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="76" column="19" lean-forward="true" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/poth.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/Logic/GameLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/game/PlayButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="99" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsuir/cpp/menu/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10124#10125#0" expanded="true" />
           </folding>
         </state>
       </provider>

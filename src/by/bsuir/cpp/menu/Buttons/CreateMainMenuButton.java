@@ -1,4 +1,4 @@
-package menu;
+package by.bsuir.cpp.menu.Buttons;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;

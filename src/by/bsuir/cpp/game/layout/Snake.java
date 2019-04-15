@@ -1,10 +1,10 @@
-package game.Button_layout;
+package by.bsuir.cpp.game.layout;
 
-import game.GameButton;
+import by.bsuir.cpp.game.GameButton;
+import by.bsuir.cpp.game.Logic.GroupRotation;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
-import javafx.scene.transform.Rotate;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -16,7 +16,8 @@ public class Snake implements Observer {
 
     private boolean flag;
 
-    public Snake(Group group,int rotation, int setPosX, int setPosY, boolean entryPoint,EventHandler<ActionEvent> eventHandler) throws java.io.FileNotFoundException, java.lang.InterruptedException {
+    public Snake(Group group, int rotation, int setPosX, int setPosY, boolean entryPoint,
+                 EventHandler<ActionEvent> eventHandler) throws java.io.FileNotFoundException {
         Group snake = new Group();
         GameButton zero = new GameButton(null, null, null);
         GameButton n15 = new GameButton(group, snake, zero);
@@ -34,11 +35,10 @@ public class Snake implements Observer {
         GameButton n3 = new GameButton(group, snake, n4);
         GameButton n2 = new GameButton(group, snake, n3);
         n1 = new GameButton(group, snake, n2);
-if(entryPoint == true)
-{
-    n1.setVisible(true);
-    n1.setDisable(false);
-}
+        if (entryPoint == true) {
+            n1.setVisible(true);
+            n1.setDisable(false);
+        }
         n1.setLayoutX(85);
         n1.setLayoutY(221);
 
@@ -84,11 +84,11 @@ if(entryPoint == true)
         n15.setLayoutX(205);
         n15.setLayoutY(385);
 
-        snake.getChildren().addAll(n1, n2, n3, n4, n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15);
+        snake.getChildren().addAll(n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15);
         snake.setLayoutX(setPosX);
         snake.setLayoutY(setPosY);
         GroupRotation rot = new GroupRotation();
-        rot.rotation(snake,rotation);
+        rot.rotation(snake, rotation);
         group.getChildren().addAll(snake);
         n15.addEventHandler(ActionEvent.ACTION, event ->
         {

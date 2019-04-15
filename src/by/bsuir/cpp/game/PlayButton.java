@@ -1,25 +1,30 @@
-package game;
+package by.bsuir.cpp.game;
 
-import game.Button_layout.Lineal;
-import game.Button_layout.SingleObject;
-import game.Button_layout.Snake;
+import by.bsuir.cpp.game.Logic.OUpdateFlag;
+import by.bsuir.cpp.game.Logic.ProgressTimeline;
+import by.bsuir.cpp.game.layout.Lineal;
+import by.bsuir.cpp.game.layout.SingleObject;
+import by.bsuir.cpp.game.layout.Snake;
+import by.bsuir.cpp.menu.Buttons.CreateMainMenuButton;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Group;
-import javafx.scene.Scene;
+import javafx.scene.*;
 import javafx.scene.control.Button;
-import javafx.scene.transform.Rotate;
+import javafx.scene.control.Slider;
 import javafx.stage.Stage;
-import menu.*;
+import by.bsuir.cpp.menu.*;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.Scene;
+
 
 public class PlayButton {
-    public void Play(Button name, Stage stage) throws java.io.FileNotFoundException, java.lang.InterruptedException {
+    public void play(Button name, Stage stage) throws java.io.FileNotFoundException, java.lang.InterruptedException {
         //MEDIA AND BACKGROUND
         javafx.scene.image.ImageView playFieldBackGround = ImageView.imageView(Globals.poth, 1920, 1080);
         javafx.scene.media.MediaPlayer BCmusic = MediaPlayer.mediaPlayer(Globals.king, 0.2);
 
-        //SCENE, GROUP, STAGE
         Group group = new Group(playFieldBackGround);
         Scene scene = new Scene(group);
         Stage Gamestage = new Stage();
@@ -28,37 +33,49 @@ public class PlayButton {
         Gamestage.setTitle("Игра");
         Gamestage.setResizable(false);
         Gamestage.initOwner(stage);
+        Button exit = CreateMainMenuButton.CreateMainMenuButton("Выход", 25, 1940,
+                30, "#556658", "#1b4727");
 
         OUpdateFlag oUpdateFlag12 = new OUpdateFlag();
         OUpdateFlag oUpdateFlag23 = new OUpdateFlag();
         OUpdateFlag oUpdateFlag34 = new OUpdateFlag();
         OUpdateFlag oUpdateFlag45 = new OUpdateFlag();
+        OUpdateFlag oUpdateFlag56 = new OUpdateFlag();
+        OUpdateFlag oUpdateFlag67 = new OUpdateFlag();
+        OUpdateFlag oUpdateFlag78 = new OUpdateFlag();
 
-        Snake snake1 = new Snake(group,1, 100, 100,true,
+        SingleObject single1 = new SingleObject(group, 960, 500, true,
                 event -> oUpdateFlag12.setNews(true));
 
-        Lineal lineal1 = new Lineal(group, 1,700, 100,false,
+        Lineal lineal1 = new Lineal(group, 1, 700, 100, false,
                 event -> oUpdateFlag23.setNews(true));
         oUpdateFlag12.addObserver(lineal1);
 
-        SingleObject single1 = new SingleObject(group, 100, 400, false,
+        Snake snake1 = new Snake(group, 4, 960, 1000, false,
                 event -> oUpdateFlag34.setNews(true));
-        oUpdateFlag23.addObserver(single1);
+        oUpdateFlag23.addObserver(snake1);
 
-        Snake snake2 = new Snake(group, 4,960, 1000,false,
+        SingleObject single2 = new SingleObject(group, 100, 400, false,
                 event -> oUpdateFlag45.setNews(true));
-        oUpdateFlag34.addObserver(snake2);
+        oUpdateFlag34.addObserver(single2);
 
-        SingleObject single2 = new SingleObject(group, 100, 400, false, action -> {
-        });
-        oUpdateFlag45.addObserver(single2);
+        Lineal lineal2 = new Lineal(group, 3, 1000, 800, false,
+                event -> oUpdateFlag56.setNews(true));
+        oUpdateFlag45.addObserver(lineal2);
 
+        SingleObject single4 = new SingleObject(group, 1000, 800, false,
+                event -> oUpdateFlag67.setNews(true));
+        oUpdateFlag56.addObserver(single4);
 
+        Lineal lineal3 = new Lineal(group, 1, 700, 100, false,
+                action -> {
+                    exit.fire();
 
+                });
+        oUpdateFlag67.addObserver(lineal3);
 
         //BUTTON AND PROGRESSBAR
-        Button exit = CreateMainMenuButton.CreateMainMenuButton("Выход", 25, 1940,
-                30, "#556658", "#1b4727");
+
         exit.setLayoutX(-10);
         exit.setLayoutY(1025);
         ProgressBar progress = new ProgressBar();
@@ -69,10 +86,8 @@ public class PlayButton {
         progress.setLayoutX(0);
         progress.setLayoutY(1005);
         group.getChildren().
-
                 addAll(progress, exit);
         ProgressTimeline.setCurrentlyPlaying(BCmusic, progress);
-
         //RUNABLE
         exit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -83,6 +98,8 @@ public class PlayButton {
                 Gamestage.close();
             }
         });
+
+
         name.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -90,7 +107,7 @@ public class PlayButton {
                 button_sound.play();
                 Gamestage.show();
                 Gamestage.setFullScreen(true);
-               // if (Gamestage.isFullScreen() == true) BCmusic.play();
+                if (Gamestage.isFullScreen() == true) BCmusic.play();
             }
         });
     }

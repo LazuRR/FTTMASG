@@ -1,4 +1,4 @@
-package menu;
+package by.bsuir.cpp.menu;
 
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
