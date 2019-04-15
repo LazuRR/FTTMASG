@@ -43,6 +43,11 @@ public class SettingsButton {
 
                 Button howtoplay = CreateMainMenuButton.CreateMainMenuButton("Как играть?", 25, 200, 40, URL, URL_line);
 
+                /*howtoplay.setOnAction(event1 -> {
+                    HowToPlay htp = new HowToPlay();
+                    htp.howToPlay(howtoplay,stage,SettingsView,URL,URL_line);
+                });
+*/
                 vbox3.getChildren().addAll(volume, graphics, howtoplay);
                 vbox3.setLayoutX(40);
                 vbox3.setLayoutY(40);
