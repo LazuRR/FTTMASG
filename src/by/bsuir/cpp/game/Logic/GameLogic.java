@@ -18,8 +18,8 @@ public class GameLogic {
         timeline.getKeyFrames().add(key);
         timeline.setOnFinished(e -> {
         });
-        //timeline.setCycleCount(Animation.INDEFINITE);
-        //timeline.play();
+        timeline.setCycleCount(Animation.INDEFINITE);
+       // timeline.play();
     }
 
     public void handle(Button bt, Button nextone, Group group, Group current) {

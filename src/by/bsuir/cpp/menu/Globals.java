@@ -18,4 +18,6 @@ public class Globals {
     public final static String button_wp_1 = "resources/images/button_wp.jpg";
     public final static String poth = "resources/images/poth.jpg";
     public final static String cursor = "resources/images/cursor.png";
+    public final static String bosc_wp = "resources/images/bosc.jpg";
+
 }

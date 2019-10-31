@@ -165,7 +165,7 @@ public class Main extends Application {
             }
         });
 
-       //
+
         ///3333/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         javafx.scene.image.ImageView imageView3 = ImageView.imageView(Globals.megu_wp, 1375, 783);

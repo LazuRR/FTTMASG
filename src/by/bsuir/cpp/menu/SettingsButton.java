@@ -31,7 +31,7 @@ public class SettingsButton {
 
                 Stage settwin = new Stage();
                 SettingsView.setLayoutX(-475);
-                SettingsView.setLayoutY(-47);
+                SettingsView.setLayoutY(-55);
                 Group pane = new Group(SettingsView);
                 VBox vbox3 = new VBox(15);
 
@@ -43,11 +43,14 @@ public class SettingsButton {
 
                 Button howtoplay = CreateMainMenuButton.CreateMainMenuButton("Как играть?", 25, 200, 40, URL, URL_line);
 
-                /*howtoplay.setOnAction(event1 -> {
-                    HowToPlay htp = new HowToPlay();
-                    htp.howToPlay(howtoplay,stage,SettingsView,URL,URL_line);
+               howtoplay.setOnAction(event1 -> {
+                   try {
+                       HowToPlay htp = new HowToPlay();
+                       htp.howToPlay(howtoplay,stage,SettingsView,URL,URL_line);
+                   } catch (java.io.FileNotFoundException ex) {
+                   }
                 });
-*/
+
                 vbox3.getChildren().addAll(volume, graphics, howtoplay);
                 vbox3.setLayoutX(40);
                 vbox3.setLayoutY(40);
